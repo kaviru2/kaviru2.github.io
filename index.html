@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kaviru Hapuarachchi — research, publications, and selected software projects.">
+  <meta name="author" content="Kaviru Hapuarachchi">
+  <title>Kaviru Hapuarachchi</title>
+  <link rel="canonical" href="https://kaviru2.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div>
+      <h1>Kaviru Hapuarachchi</h1>
+      <p class="subtitle">Information Systems undergraduate and researcher</p>
+      <p>Sri Lanka</p>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>
+        I am a final-year B.Sc. (Hons) Information Systems student at the
+        University of Colombo School of Computing. My work focuses on dependable
+        agentic AI, software systems, automated security analysis, and
+        human-centered AI for learning. I expect to graduate in May 2027.
+      </p>
+      <p class="links">
+        <a href="mailto:hapuarachchikaviru@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=DtsYSK4AAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/kaviru2">GitHub</a>
+        <a href="https://www.linkedin.com/in/kaviruhapuarachchi/">LinkedIn</a>
+      </p>
+    </section>
+
+    <section id="research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+      <ul class="plain-list">
+        <li>Distributed and concurrent software systems</li>
+        <li>Fault-tolerant and reliable agentic AI systems</li>
+        <li>LLM planning and automated security analysis</li>
+        <li>Human-centered AI for learning and knowledge retention</li>
+      </ul>
+
+      <article>
+        <div class="entry-heading">
+          <h3>Engineering Intern (Research), WSO2</h3>
+          <p><time datetime="2025-11">Nov 2025</time>–<time datetime="2026-05">May 2026</time></p>
+        </div>
+        <p>
+          Formalised a recovery model for LLM-based agentic systems introducing
+          compensatory rollback, and designed an experimental evaluation by
+          extending REALM-Bench and tau2-bench with executable environments and
+          automated disruption engines.
+        </p>
+      </article>
+
+      <article>
+        <div class="entry-heading">
+          <h3>Research Volunteer, WSO2</h3>
+          <p><time datetime="2026-05">May 2026</time>–present</p>
+        </div>
+        <p>
+          Working with Dr. Srinath Perera and Dr. Suranga Seneviratne on LLM
+          planning for automated penetration testing.
+        </p>
+      </article>
+
+      <article>
+        <div class="entry-heading">
+          <h3>Conversation Design &amp; Content Strategy Associate, ConvoGrid AI</h3>
+          <p><time datetime="2024-11">Nov 2024</time>–<time datetime="2025-10">Oct 2025</time></p>
+        </div>
+        <p>
+          Conducted data annotation, model evaluation, and analysis of
+          human–AI interaction patterns in a part-time remote role.
+        </p>
+      </article>
+    </section>
+
+    <section id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2>
+      <ol class="bibliography">
+        <li>
+          <p>
+            Srinath Perera, <strong>Kaviru Hapuarachchi</strong>, Frank Leymann,
+            and Rania Khalaf. “Robust Agent Compensation (RAC): Teaching AI
+            Agents to Compensate.” <em>ACM Conference on AI and Agentic Systems
+            (ACM CAIS ’26)</em>, accepted, 2026.
+          </p>
+          <p class="item-links">
+            <a href="https://arxiv.org/abs/2605.03409">Paper</a>
+            <a href="https://github.com/wso2-incubator/research-rac">Code</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Kaviru Hapuarachchi</strong>. “When the Next Step Is Not One
+            Step: Distribution-Aware Execution Modeling for Concurrent Go
+            Programs.” Preprint, 2026.
+          </p>
+          <p class="item-links">
+            <a href="https://arxiv.org/abs/2606.17508">Paper</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Kaviru Hapuarachchi</strong> and Shakthi Warnakulasooriya.
+            “Leveraging RAFT to Empower Confident First-Aid Decisions in
+            Emergencies.” Preprint, 2024.
+          </p>
+          <p class="item-links">
+            <a href="https://doi.org/10.13140/RG.2.2.35911.30888">Paper</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected Projects</h2>
+
+      <article>
+        <h3>RAC: Agent Compensation &amp; Rollback Library</h3>
+        <p>
+          A framework-independent compensation and rollback library for ReAct
+          agents. It records actions and compensates for completed operations
+          when later steps fail, helping preserve consistency in agentic workflows.
+        </p>
+        <p class="item-links"><a href="https://github.com/wso2-incubator/research-rac">Repository</a></p>
+      </article>
+
+      <article>
+        <h3>SELAR: Semantic Linking for Active Retention</h3>
+        <p>
+          A theory-grounded generative-AI reading system that surfaces
+          argument-level links across a learner’s document library. The project
+          includes a controlled pilot measuring retention after 24 hours and seven days.
+        </p>
+      </article>
+
+      <article>
+        <h3>LLM Planning for Automated Penetration Testing</h3>
+        <p>
+          An ongoing research effort on reinforcement learning and language-model
+          planning for security analysis, with a public primer, paper collection,
+          and fine-tuning pipeline.
+        </p>
+        <p class="item-links"><a href="https://github.com/kaviru2/rl-pentesting-primer">Repository</a></p>
+      </article>
+
+      <article>
+        <h3>MediQ</h3>
+        <p>
+          An AI-assisted first-aid guidance system and global finalist in the
+          IEEE IES Generative AI Challenge 2024. My primary contribution was the
+          design of generative user interfaces that adapt to situational context.
+        </p>
+        <p class="item-links"><a href="https://github.com/kodecosmo/MediQ-Chat">Repository</a></p>
+      </article>
+    </section>
+
+    <section id="service" aria-labelledby="service-heading">
+      <h2 id="service-heading">Service and Recognition</h2>
+      <ul>
+        <li>Chairperson, IEEE Computer Society, UCSC, 2025/26</li>
+        <li>Founder, The Daily Grind peer-learning community, supporting more than 300 undergraduates</li>
+        <li>Web Lead, National Olympiad in Informatics 2024</li>
+        <li>Global Finalist, IEEE IES Generative AI Hackathon</li>
+        <li>Finalist, I Am a Researcher 2024 (ICTER24)</li>
+        <li>Winner, Best Sustainable Impact Project 2024 (SyscoLABS)</li>
+      </ul>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="entry-heading">
+        <div>
+          <h3>University of Colombo School of Computing</h3>
+          <p>B.Sc. (Hons) in Information Systems</p>
+        </div>
+        <p><time datetime="2023-05">May 2023</time>–<time datetime="2027-05">May 2027</time></p>
+      </div>
+      <p>GPA: 3.42/4.0. Director’s List, 2023.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:hapuarachchikaviru@gmail.com">hapuarachchikaviru@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/kaviru2">github.com/kaviru2</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kaviruhapuarachchi/">linkedin.com/in/kaviruhapuarachchi</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated July 2026.</p>
+  </footer>
+</body>
+</html>
