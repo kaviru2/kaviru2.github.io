@@ -132,6 +132,12 @@ li + li {
   margin-bottom: 30px;
 }
 
+section > ul:last-child,
+section > ol:last-child,
+.plain-list:last-child {
+  margin-bottom: 0;
+}
+
 .entry-heading {
   display: flex;
   align-items: baseline;
@@ -151,6 +157,15 @@ li + li {
 
 .bibliography {
   padding-left: 28px;
+}
+
+.list-heading {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.bibliography + .list-heading {
+  margin-top: 30px;
 }
 
 .bibliography li + li {
