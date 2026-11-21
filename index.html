@@ -3,276 +3,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kaviru Hapuarachchi — research, publications, and selected software projects.">
+  <meta name="description" content="Kaviru Hapuarachchi — research on how AI agents recover from failures. Publications, news, and experience.">
   <meta name="author" content="Kaviru Hapuarachchi">
   <title>Kaviru Hapuarachchi</title>
   <link rel="canonical" href="https://kaviru2.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Kaviru Hapuarachchi">
-  <meta property="og:description" content="Research on reliable agentic AI: publications, experience, and projects.">
+  <meta property="og:description" content="Research on how AI agents recover from failures.">
   <meta property="og:url" content="https://kaviru2.github.io/">
   <meta property="og:type" content="profile">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div>
+  <div class="wrap">
+    <header>
       <h1>Kaviru Hapuarachchi</h1>
-      <p class="subtitle">Undergraduate researcher in reliable agentic AI</p>
-      <p>Sri Lanka</p>
-    </div>
-    <nav aria-label="Primary navigation">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#service">Service</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>
-        I am a final-year B.Sc. (Hons) Information Systems student at the
-        University of Colombo School of Computing, graduating in May 2027.
-        My research asks how AI agents can recover when the actions they take
-        in real systems fail: compensation and rollback, testing agents in
-        stateful environments, and what recovery looks like in deployed agent
-        tools. I also work on concurrent software systems, automated security
-        analysis, and AI for learning.
-      </p>
-      <p>
-        Until December 2026 I am in Higashi-Hiroshima, Japan, on a GS-JTI
-        placement with SYNRA. I plan to start a PhD in late 2027 or early 2028.
-      </p>
-      <p class="links">
+      <nav aria-label="Links">
         <a href="mailto:hapuarachchikaviru@gmail.com">Email</a>
         <a href="https://scholar.google.com/citations?user=DtsYSK4AAAAJ&amp;hl=en">Google Scholar</a>
         <a href="https://github.com/kaviru2">GitHub</a>
         <a href="https://www.linkedin.com/in/kaviruhapuarachchi/">LinkedIn</a>
-      </p>
-    </section>
+      </nav>
+    </header>
 
-    <section id="research" aria-labelledby="research-heading">
-      <h2 id="research-heading">Research</h2>
-      <ul class="plain-list">
-        <li>Distributed and concurrent software systems</li>
-        <li>Fault-tolerant and reliable agentic AI systems</li>
-        <li>LLM planning and automated security analysis</li>
-        <li>Human-centered AI for learning and knowledge retention</li>
-      </ul>
-    </section>
+    <main id="main">
+      <section id="about" aria-labelledby="about-h">
+        <h2 id="about-h">About</h2>
+        <div class="about">
+          <div>
+            <p>
+              I’m a final-year undergraduate at the University of Colombo School
+              of Computing, graduating in May 2027. I study how AI agents recover
+              when the actions they take in real systems fail: compensation and
+              rollback, testing agents in stateful environments, and what recovery
+              looks like in deployed agent tools.
+            </p>
+            <p>
+              Previously I was a research intern at WSO2, where I worked on <a href="https://arxiv.org/abs/2605.03409">RAC</a>
+              with Srinath Perera and Frank Leymann. I’m currently in Japan on a
+              GS&#8209;JTI placement with SYNRA, and I plan to start a PhD in late 2027
+              or early 2028.
+            </p>
+          </div>
+          <!-- Photo: add <img class="photo" src="photo.jpg" alt="Kaviru Hapuarachchi"> here -->
+        </div>
+      </section>
 
-    <section id="publications" aria-labelledby="publications-heading">
-      <h2 id="publications-heading">Publications</h2>
-      <h3 class="list-heading">Peer-reviewed</h3>
-      <ol class="bibliography">
+      <section id="news" aria-labelledby="news-h">
+        <h2 id="news-h">News</h2>
+        <ul class="dated">
+          <li><span class="date">Nov 2026</span><div>Paper on distribution-aware execution modeling for concurrent Go programs presented at <em>ICTer 2026</em>.</div></li>
+          <li><span class="date">Nov 2026</span><div>New preprint on how AI agent harnesses and runtimes recover from failures in real use; <a href="https://zenodo.org/records/24122560" style="white-space:nowrap">replication data</a> released.</div></li>
+          <li><span class="date">Oct 2026</span><div>Started a GS&#8209;JTI placement at SYNRA in Higashi-Hiroshima, Japan.</div></li>
+          <li><span class="date">May 2026</span><div><a href="https://arxiv.org/abs/2605.03409">RAC</a> released on arXiv, accepted at <em>ACM CAIS 2026</em>.</div></li>
+        </ul>
+      </section>
+
+      <section id="publications" aria-labelledby="pubs-h">
+        <h2 id="pubs-h">Selected work</h2>
+        <h3 class="sub">Peer-reviewed</h3>
+        <ul class="work">
         <li>
-          <p>
-            Srinath Perera, <strong>Kaviru Hapuarachchi</strong>, Frank Leymann,
-            and Rania Khalaf. “Robust Agent Compensation (RAC): Teaching AI
-            Agents to Compensate.” <em>ACM Conference on AI and Agentic Systems
-            (ACM CAIS ’26)</em>, 2026.
-          </p>
-          <p class="item-links">
-            <a href="https://arxiv.org/abs/2605.03409">Paper</a>
-            <a href="https://github.com/wso2-incubator/research-rac">Code</a>
-          </p>
+          <span class="title">Robust Agent Compensation (RAC): Teaching AI Agents to Compensate</span><br>
+          <span class="authors">Srinath Perera, <strong>Kaviru Hapuarachchi</strong>, Frank Leymann, Rania Khalaf</span><br>
+          <em>ACM Conference on AI and Agentic Systems (CAIS), 2026</em> <span class="item-links"><a href="https://arxiv.org/abs/2605.03409">paper</a><span class="sep"> | </span><a href="https://github.com/wso2-incubator/research-rac">code</a></span>
         </li>
         <li>
-          <p>
-            <strong>Kaviru Hapuarachchi</strong>. “When the Next Step Is Not One
-            Step: Distribution-Aware Execution Modeling for Concurrent Go
-            Programs.” <em>ICTer 2026</em>, Springer CCIS (to appear), 2026.
-          </p>
-          <p class="item-links">
-            <a href="https://arxiv.org/abs/2606.17508">Paper</a>
-            <a href="https://github.com/kaviru2/Weave">Code</a>
-          </p>
+          <span class="title">When the Next Step Is Not One Step: Distribution-Aware Execution Modeling for Concurrent Go Programs</span><br>
+          <span class="authors"><strong>Kaviru Hapuarachchi</strong></span><br>
+          <em>ICTer 2026, Springer CCIS (to appear)</em> <span class="item-links"><a href="https://arxiv.org/abs/2606.17508">paper</a><span class="sep"> | </span><a href="https://github.com/kaviru2/Weave">code</a></span>
         </li>
-      </ol>
-
-      <h3 class="list-heading">Preprints and reports</h3>
-      <ol class="bibliography" start="3">
+        </ul>
+        <h3 class="sub">Preprints and reports</h3>
+        <ul class="work">
         <li>
-          <p>
-            <strong>Kaviru Hapuarachchi</strong>. “Exercised, Rarely Recovered:
-            What Public Reports Say About Recovery in 50 AI Agent Harnesses and
-            Runtimes.” Preprint, 2026.
-          </p>
-          <p class="item-links">
-            <a href="https://zenodo.org/records/24122560">Data</a>
-          </p>
+          <span class="title">Exercised, Rarely Recovered: What Public Reports Say About Recovery in 50 AI Agent Harnesses and Runtimes</span><br>
+          <span class="authors"><strong>Kaviru Hapuarachchi</strong></span><br>
+          <em>Preprint, 2026</em> <span class="item-links"><a href="https://zenodo.org/records/24122560">data</a></span>
         </li>
         <li>
-          <p>
-            <strong>Kaviru Hapuarachchi</strong> and Harrison Edwards. “Omo:
-            Giving Continuing AI-Agent Work a Place to Return To.” Preprint, 2026.
-          </p>
-          <p class="item-links">
-            <a href="https://github.com/omoresearch/omo-space">Code</a>
-          </p>
+          <span class="title">Omo: Giving Continuing AI-Agent Work a Place to Return To</span><br>
+          <span class="authors"><strong>Kaviru Hapuarachchi</strong>, Harrison Edwards</span><br>
+          <em>Preprint, 2026</em> <span class="item-links"><a href="https://github.com/omoresearch/omo-space">code</a></span>
         </li>
         <li>
-          <p>
-            <strong>Kaviru Hapuarachchi</strong> and Harrison Edwards. “Omo
-            Builder: Evidence-Gated Agentic Productization.” Technical report, 2026.
-          </p>
-          <p class="item-links">
-            <a href="https://doi.org/10.13140/RG.2.2.29512.89604">Report</a>
-          </p>
+          <span class="title">Omo Builder: Evidence-Gated Agentic Productization</span><br>
+          <span class="authors"><strong>Kaviru Hapuarachchi</strong>, Harrison Edwards</span><br>
+          <em>Technical report, 2026</em> <span class="item-links"><a href="https://doi.org/10.13140/RG.2.2.29512.89604">report</a></span>
         </li>
         <li>
-          <p>
-            <strong>Kaviru Hapuarachchi</strong> and Shakthi Warnakulasooriya.
-            “Leveraging RAFT to Empower Confident First-Aid Decisions in
-            Emergencies.” Preprint, 2024.
-          </p>
-          <p class="item-links">
-            <a href="https://doi.org/10.13140/RG.2.2.35911.30888">Paper</a>
-          </p>
+          <span class="title">Leveraging RAFT to Empower Confident First-Aid Decisions in Emergencies</span><br>
+          <span class="authors"><strong>Kaviru Hapuarachchi</strong>, Shakthi Warnakulasooriya</span><br>
+          <em>Preprint, 2024</em> <span class="item-links"><a href="https://doi.org/10.13140/RG.2.2.35911.30888">paper</a></span>
         </li>
-      </ol>
-    </section>
+        </ul>
+      </section>
 
-    <section id="experience" aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Experience</h2>
+      <section id="experience" aria-labelledby="exp-h">
+        <h2 id="exp-h">Experience</h2>
+        <ul class="dated">
+          <li><span class="date">2026–</span><div><strong>SYNRA Inc.</strong>, Higashi-Hiroshima, Japan<br><span class="desc">AI / RAG Engineer (GS&#8209;JTI placement). Building a retrieval-augmented pipeline that answers customer questions about machine-vibration reports; evaluating self-hosted LLMs for on-device use.</span></div></li>
+          <li><span class="date">2026–</span><div><strong>WSO2 Research</strong>, Colombo<br><span class="desc">Research Volunteer. LLM planning for automated penetration testing, with Srinath Perera and Suranga Seneviratne.</span></div></li>
+          <li><span class="date">2025–26</span><div><strong>WSO2 Research</strong>, Colombo<br><span class="desc">Engineering Intern (Research). Formalised compensatory rollback for LLM agents and extended REALM-Bench and τ²-Bench with disruption engines.</span></div></li>
+          <li><span class="date">2025–</span><div><strong>PhonicsMaker / Omo.Space</strong><br><span class="desc">Engineer (part-time). Maintain an AI phonics-book service with more than 1,000 paying users.</span></div></li>
+          <li><span class="date">2024–25</span><div><strong>ConvoGrid AI</strong><br><span class="desc">Conversation Design &amp; Content Strategy Associate (part-time). Data annotation and model evaluation.</span></div></li>
+        </ul>
+      </section>
 
-      <article>
-        <div class="entry-heading">
-          <h3>AI / RAG Engineer (Undergraduate Trainee), SYNRA Inc.</h3>
-          <p><time datetime="2026-10">Oct 2026</time>–<time datetime="2026-12">Dec 2026</time></p>
-        </div>
-        <p>
-          GS-JTI placement in Higashi-Hiroshima, Japan. Building a
-          retrieval-augmented pipeline that answers customer questions about
-          machine-vibration analysis reports, with structured measurement data
-          as the source of truth and report PDFs as citations. Benchmarked
-          self-hosted LLMs for throughput and bilingual (English/Japanese)
-          diagnostic accuracy, and built an on-device assistant prototype.
-        </p>
-      </article>
+      <section id="education" aria-labelledby="edu-h">
+        <h2 id="edu-h">Education</h2>
+        <ul class="dated">
+          <li><span class="date">2023–27</span><div><strong>University of Colombo School of Computing</strong><br><span class="desc">B.Sc. (Hons) in Information Systems. GPA 3.42/4.0, Director’s List 2023.</span></div></li>
+        </ul>
+      </section>
 
-      <article>
-        <div class="entry-heading">
-          <h3>Engineering Intern (Research), WSO2</h3>
-          <p><time datetime="2025-11">Nov 2025</time>–<time datetime="2026-05">May 2026</time></p>
-        </div>
-        <p>
-          Formalised a recovery model for LLM-based agentic systems based on
-          compensatory rollback, and designed its evaluation by extending
-          REALM-Bench and τ²-Bench with executable environments and automated
-          disruption engines.
-        </p>
-      </article>
+      <section id="service" aria-labelledby="service-h">
+        <h2 id="service-h">Service and awards</h2>
+        <ul class="plain">
+          <li>Chairperson, IEEE Computer Society, UCSC (2025/26)</li>
+          <li>Founder, The Daily Grind, a peer-learning community of 300+ undergraduates; Best Sustainable Impact Project 2024 (SyscoLABS)</li>
+          <li>Global Finalist, IEEE IES Generative AI Challenge 2024 (MediQ)</li>
+          <li>Finalist, I Am a Researcher 2024 (ICTER)</li>
+          <li>Web Lead, National Olympiad in Informatics 2024</li>
+        </ul>
+      </section>
+    </main>
 
-      <article>
-        <div class="entry-heading">
-          <h3>Research Volunteer, WSO2</h3>
-          <p><time datetime="2026-05">May 2026</time>–present</p>
-        </div>
-        <p>
-          Working with Dr. Srinath Perera and Dr. Suranga Seneviratne on LLM
-          planning for automated penetration testing.
-        </p>
-      </article>
-
-      <article>
-        <div class="entry-heading">
-          <h3>Engineer (Part-time), PhonicsMaker / Omo.Space</h3>
-          <p><time datetime="2025-07">Jul 2025</time>–present</p>
-        </div>
-        <p>
-          Maintain the application and customer-support workflows of an AI
-          phonics-book service with more than 1,000 paying users.
-        </p>
-      </article>
-
-      <article>
-        <div class="entry-heading">
-          <h3>Conversation Design &amp; Content Strategy Associate, ConvoGrid AI</h3>
-          <p><time datetime="2024-11">Nov 2024</time>–<time datetime="2025-10">Oct 2025</time></p>
-        </div>
-        <p>
-          Data annotation, model evaluation, and analysis of human–AI
-          interaction patterns in a part-time remote role.
-        </p>
-      </article>
-    </section>
-
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Selected Projects</h2>
-
-      <article>
-        <h3>RAC: Agent Compensation &amp; Rollback Library</h3>
-        <p>
-          A framework-independent compensation and rollback library for ReAct
-          agents. It records actions and compensates for completed operations
-          when later steps fail, helping preserve consistency in agentic workflows.
-        </p>
-        <p class="item-links"><a href="https://github.com/wso2-incubator/research-rac">Repository</a></p>
-      </article>
-
-      <article>
-        <h3>SELAR: Semantic Linking for Active Retention</h3>
-        <p>
-          A theory-grounded generative-AI reading system that surfaces
-          argument-level links across a learner’s document library. The project
-          includes a controlled pilot measuring retention after 24 hours and seven days.
-        </p>
-      </article>
-
-      <article>
-        <h3>MediQ</h3>
-        <p>
-          An AI-assisted first-aid guidance system and global finalist in the
-          IEEE IES Generative AI Challenge 2024. My primary contribution was the
-          design of generative user interfaces that adapt to situational context.
-        </p>
-        <p class="item-links"><a href="https://github.com/kodecosmo/MediQ-Chat">Repository</a></p>
-      </article>
-    </section>
-
-    <section id="service" aria-labelledby="service-heading">
-      <h2 id="service-heading">Service and Recognition</h2>
-      <ul>
-        <li>Chairperson, IEEE Computer Society, UCSC, 2025/26</li>
-        <li>Founder, The Daily Grind peer-learning community, supporting more than 300 undergraduates</li>
-        <li>Web Lead, National Olympiad in Informatics 2024</li>
-        <li>Global Finalist, IEEE IES Generative AI Hackathon</li>
-        <li>Finalist, I Am a Researcher 2024 (ICTER24)</li>
-        <li>Winner, Best Sustainable Impact Project 2024 (SyscoLABS)</li>
-      </ul>
-    </section>
-
-    <section id="education" aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <div class="entry-heading">
-        <div>
-          <h3>University of Colombo School of Computing</h3>
-          <p>B.Sc. (Hons) in Information Systems</p>
-        </div>
-        <p><time datetime="2023-05">May 2023</time>–<time datetime="2027-05">May 2027</time></p>
-      </div>
-      <p>GPA: 3.42/4.0. Director’s List, 2023.</p>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <address>
-        <p>Email: <a href="mailto:hapuarachchikaviru@gmail.com">hapuarachchikaviru@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/kaviru2">github.com/kaviru2</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kaviruhapuarachchi/">linkedin.com/in/kaviruhapuarachchi</a></p>
-      </address>
-    </section>
-  </main>
-
-  <footer>
-    <p>Last updated November 2026.</p>
-  </footer>
+    <footer>Last updated November 2026</footer>
+  </div>
 </body>
 </html>
